@@ -1,0 +1,26 @@
+<div class="contenedor">
+    <h2>Directorio de usuarios</h2>
+
+    @if (cargando()) {
+    <p class="mensaje">Cargando usuarios...</p>
+    }
+
+    @if (error()) {
+    <div class="mensaje error">
+        <p>No se pudieron cargar los usuarios. Intenta de nuevo.</p>
+        <button (click)="cargarUsuarios()">Reintentar</button>
+    </div>
+    }
+
+    <div class="tarjetas">
+        @for (u of usuarios(); track u.id) {
+        <div class="tarjeta">
+            <span class="id">ID {{ u.id }}</span>
+            <h3>{{ u.name }}</h3>
+            <p>{{ u.email }}</p>
+            <p>{{ u.phone }}</p>
+            <p class="empresa">{{ u.company.name }}</p>
+        </div>
+        }
+    </div>
+</div>

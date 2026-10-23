@@ -1,0 +1,103 @@
+:host {
+    display: block;
+    min-height: 100vh;
+    background: #f5f5f7;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+h2 {
+    margin: 0 0 40px;
+    text-align: center;
+    color: #1d1d1f;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.tarjeta {
+    padding: 26px;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    color: #6e6e73;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Efecto al pasar el cursor */
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 34px rgba(0, 113, 227, 0.18);
+}
+
+.tarjeta h3 {
+    margin: 14px 0 10px;
+    color: #1d1d1f;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tarjeta p {
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.id {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 20px;
+    background: #e8f2ff;
+    color: #0071e3;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.empresa {
+    margin-top: 16px !important;
+    padding-top: 14px;
+    border-top: 1px solid #e8e8ed;
+    color: #0071e3;
+    font-weight: 500;
+}
+
+.mensaje {
+    text-align: center;
+    color: #6e6e73;
+    font-size: 17px;
+}
+
+.mensaje.error {
+    max-width: 420px;
+    margin: 0 auto 30px;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    color: #d70015;
+}
+
+button {
+    padding: 11px 26px;
+    border: none;
+    border-radius: 980px;
+    background: #0071e3;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #0077ed;
+}
